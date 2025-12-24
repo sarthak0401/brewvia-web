@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const video = document.getElementById("myVideo");
+          video.playbackRate = 0.7;
+        });
+      </script>
+      
+  </head>
+  <body>
     <div class="main-parent-container">
-        <header>
-            <div class="first-div">
-                <img src="img/logo.jpg" alt="Brewvia-logo">
-                <h3>Brewvia</h3>
-            </div>
+      <header>
+        <div class="first-div">
+          <img src="img/logo.jpg" alt="Brewvia-logo" />
+          <h3>Brewvia</h3>
+        </div>
 
-            <div class="second-div">
-                <a href="">Home</a>
-                <a href="">Categories</a>
-                <a href="">Contact</a>
-                <a href="">About</a>
-            </div>
+        <div class="second-div">
+          <a href="">Home</a>
+          <a href="">Categories</a>
+          <a href="">Contact</a>
+          <a href="">About</a>
+        </div>
 
-            <div class="third-div">
-                <button>Cart</button>
-            </div>
-        </header>
+        <div class="third-div">
+          <button>Cart</button>
+        </div>
+      </header>
+
+      <section>
+        <div class="hero-section-description">
+          <h1>Experience the best in the class Flavour richness</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            consequatur voluptatem libero neque laudantium? Blanditiis
+            exercitationem consequuntur nemo architecto hic quibusdam tempore
+            vero, pariatur excepturi, quam quae deleniti qui amet?
+          </p>
+        </div>
+        <div>
+          <video autoplay loop muted playsinline class="hero-video" id="myVideo">
+            <source
+              src="Vid/hero-section-vid.mp4"
+              type="video/webm"
+            />
+          </video>
+        </div>
+      </section>
+
     </div>
-</body>
+  </body>
 </html>
