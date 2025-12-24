@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .first-div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+header .first-div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+header .first-div h3 {
+  display: inline-block;
+  color: white;
+}
+
+header {
+  background-color: rgb(31, 17, 0);
+  height: 70px;
+}
+
+header .second-div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 10px;
+}
+
+header .second-div a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+header .third-div button {
+  padding: 10px;
+  margin-right: 1rem;
+}
