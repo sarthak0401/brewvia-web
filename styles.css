@@ -8,12 +8,35 @@ body {
   /* background-color: rgb(251, 222, 194);
   color: black;  */
 
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at center,
     #1a1a1a 0%,
     #0b0b0b 40%,
     #000000 100%
-  );
+  ); */
+
+ 
+ background: radial-gradient(
+  circle at center,
+  #3e2f28 0%,   
+  #231712 40%, 
+  #0f0806 100%  
+); 
+
+/* background: radial-gradient(
+  circle at center,
+  #5d4037 0%,   
+  #3e2723 40%,  
+  #1b100d 100% 
+); */
+
+/* background: radial-gradient(
+  circle at center,
+  #8d6e63 0%,  
+  #4e342e 40%,  
+  #1f1411 100%  
+); */
+
   color: whitesmoke;
 }
 
@@ -43,11 +66,15 @@ header .first-div h3 {
 header {
   /* background-color: rgb(31, 17, 0); */
   /* background-color: rgba(41, 27, 21, 0.57); */
-  background-color: #14100c;
+  background-color: #24160a;
+  /* background-color: #302114ec; */
+  /* background-color: #302114; */
+  /* background-color: #3d261090; */
 
   height: 70px;
   color: #f5f5f5;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(248, 248, 248, 0.162);
+  border-radius: 10px;
 }
 
 header .second-div {
@@ -62,6 +89,11 @@ a:visited {
   color: white;
   text-decoration: none;
 }
+
+/* header .second-div a:link:first-child,
+a:visited:first-child {
+  font-weight: bold;
+} */
 
 header .third-div button {
   padding: 10px;
@@ -96,5 +128,13 @@ section {
 }
 
 .hero-section-description h1 {
-  font-size: 70px;
+  font-size: 65px;
+  word-spacing: -3px;
+  line-height: 1;
+}
+
+.hero-section-description p {
+  word-spacing: 3px;
+  opacity: 70%;
+  line-height: 1.4;
 }
