@@ -199,10 +199,10 @@ a:visited {
 
 .product-card .row-2 {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   align-items: center;
-  gap: 50px;
+  gap:80px;
 }
 
 .product-card .row-2 .inner-class-row-2 {
@@ -218,7 +218,7 @@ a:visited {
 }
 
 .product-card .row-2 img {
-  height: 300px;
+  width: 450px;
   border-radius: 20px;
 }
 .product-card .row-3 {
