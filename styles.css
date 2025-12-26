@@ -202,7 +202,7 @@ a:visited {
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   align-items: center;
-  gap:80px;
+  gap:100px;
 }
 
 .product-card .row-2 .inner-class-row-2 {
@@ -218,8 +218,9 @@ a:visited {
 }
 
 .product-card .row-2 img {
-  width: 450px;
+  width: 350px;
   border-radius: 20px;
+  height:450px;
 }
 .product-card .row-3 {
   margin: 30px 0;
