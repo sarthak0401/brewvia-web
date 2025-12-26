@@ -15,22 +15,21 @@ body {
     #000000 100%
   ); */
 
- 
- background: radial-gradient(
-  circle at center,
-  #3e2f28 0%,   
-  #231712 40%, 
-  #0f0806 100%  
-); 
+  background: radial-gradient(
+    circle at center,
+    #3e2f28 0%,
+    #231712 40%,
+    #0f0806 100%
+  );
 
-/* background: radial-gradient(
+  /* background: radial-gradient(
   circle at center,
   #5d4037 0%,   
   #3e2723 40%,  
   #1b100d 100% 
 ); */
 
-/* background: radial-gradient(
+  /* background: radial-gradient(
   circle at center,
   #8d6e63 0%,  
   #4e342e 40%,  
@@ -138,3 +137,98 @@ section {
   opacity: 70%;
   line-height: 1.4;
 }
+
+/* Ordering section */
+.ordering-section {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 50px;
+  /* background-color:#24130a; */
+  gap: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.category-nav-buttons {
+  display: flex;
+  margin: auto; /* This centers the nav(buttons) - div element*/
+  padding-top: 25px;
+  gap: 10px;
+}
+
+.category-nav-buttons a:link,
+a:visited {
+  text-decoration: none;
+  background-color: #725345;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.category-nav-buttons a:hover {
+  background-color: #5a3e33;
+  transform: translateY(-10px);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 250px 50px;
+  grid-area: 'row1 row1 row1'
+  'row2 row2 row2'
+  'row3 row3 row3' ; */
+  /* background-color: #503314; */
+  background-color: #2b1f11;
+  align-items: center;
+  margin: 30px 80px;
+  border-radius: 10px;
+  /* border: 1px solid white; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.product-card .row-1 {
+  text-align: center;
+  margin: 50px 0;
+  background-color:#3d2a23;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.product-card .row-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+
+.product-card .row-2 .inner-class-row-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 10px;
+}
+
+.product-card .row-2 li {
+  margin-left: 50px;
+}
+
+.product-card .row-2 img {
+  height: 300px;
+  border-radius: 20px;
+}
+.product-card .row-3 {
+  margin: 30px 0;
+}
+.product-card .row-3 button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+.product-card .row-3 button:hover {
+background-color: #988d88;}
