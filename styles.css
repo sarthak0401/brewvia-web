@@ -65,7 +65,13 @@ header .first-div h3 {
 header {
   /* background-color: rgb(31, 17, 0); */
   /* background-color: rgba(41, 27, 21, 0.57); */
-  background-color: #24160a;
+  header {
+  background: rgba(20, 14, 10, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
   /* background-color: #302114ec; */
   /* background-color: #302114; */
   /* background-color: #3d261090; */
@@ -142,10 +148,16 @@ section {
 .ordering-section {
   display: flex;
   flex-direction: column;
-  margin: 40px 50px;
+  margin: 40px 40px;
   /* background-color:#24130a; */
+   background: radial-gradient(
+    circle at center,
+    #3e2f28 0%,
+    #231712 40%,
+    #0f0806 100%
+  );
   gap: 20px;
-  border: 1px solid white;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.519); */
   border-radius: 10px;
 }
 
@@ -180,22 +192,27 @@ a:visited {
   'row2 row2 row2'
   'row3 row3 row3' ; */
   /* background-color: #503314; */
-  background-color: #2b1f11;
+ 
   align-items: center;
   margin: 30px 80px;
-  border-radius: 10px;
-  /* border: 1px solid white; */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  border: 0.5px outset rgba(255, 255, 255, 0.484);
+  box-shadow: 0 0 10px rgba(130, 114, 106, 0.1);
 }
 
 .product-card .row-1 {
   text-align: center;
-  margin: 50px 0;
-  background-color:#3d2a23;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 20px 50px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 0.3px rgba(0, 0, 0, 0.1); */
+  background: rgba(20, 14, 10, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(199, 154, 90, 0.6);
+  margin: 30px;
 }
+
 
 .product-card .row-2 {
   display: grid;
@@ -210,7 +227,10 @@ a:visited {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  margin-left: 10px;
+  margin-left: 20px;
+  box-shadow: 0 0 5px rgba(92, 90, 90, 0.25);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .product-card .row-2 li {
@@ -218,18 +238,32 @@ a:visited {
 }
 
 .product-card .row-2 img {
-  width: 350px;
-  border-radius: 20px;
-  height:450px;
+  width: 400px;
+  border-radius: 5px;
+  height:500px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+.product-card .row-2 .price {
+  box-shadow: 0 0 5px rgba(92, 90, 90, 0.25);
+  border-radius: 5px;
+  display: inline;
+  padding: 15px;
+  width: fit-content;
+}
+
+
 .product-card .row-3 {
   margin: 30px 0;
 }
 .product-card .row-3 button {
   padding: 10px;
   border-radius: 5px;
+  background-color: #39261f;
+  color: white;
+  font-weight: bold;
 }
 
 
 .product-card .row-3 button:hover {
-background-color: #988d88;}
+background-color: #77594a;}
