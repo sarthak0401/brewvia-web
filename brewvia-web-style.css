@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  /* background-color: rgb(251, 222, 194);
+  color: black;  */
+
+  /* background: radial-gradient(
+    circle at center,
+    #1a1a1a 0%,
+    #0b0b0b 40%,
+    #000000 100%
+  ); */
+
+  background: radial-gradient(
+    circle at center,
+    #3e2f28 0%,
+    #231712 40%,
+    #0f0806 100%
+  );
+
+  /* background: radial-gradient(
+  circle at center,
+  #5d4037 0%,   
+  #3e2723 40%,  
+  #1b100d 100% 
+); */
+
+  /* background: radial-gradient(
+  circle at center,
+  #8d6e63 0%,  
+  #4e342e 40%,  
+  #1f1411 100%  
+); */
+
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .first-div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+header .first-div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+header .first-div h3 {
+  display: inline-block;
+  color: white;
+}
+
+header {
+  /* background-color: rgb(31, 17, 0); */
+  /* background-color: rgba(41, 27, 21, 0.57); */
+  header {
+    background: rgba(20, 14, 10, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* background-color: #302114ec; */
+  /* background-color: #302114; */
+  /* background-color: #3d261090; */
+
+  height: 70px;
+  color: #f5f5f5;
+  border-bottom: 1px solid rgba(248, 248, 248, 0.162);
+  border-radius: 10px;
+}
+
+header .second-div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 10px;
+}
+
+header .second-div a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* header .second-div a:link:first-child,
+a:visited:first-child {
+  font-weight: bold;
+} */
+
+header .third-div button {
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-radius: 4px;
+  margin: 0 120px;
+}
+
+.hero-video {
+  width: 100%;
+  max-height: 630px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.hero-section-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  align-items: center;
+}
+
+.hero-section-description h1 {
+  font-size: 65px;
+  word-spacing: -3px;
+  line-height: 1;
+}
+
+.hero-section-description p {
+  word-spacing: 3px;
+  opacity: 70%;
+  line-height: 1.4;
+}
+
+/* Ordering section */
+.ordering-section {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 40px;
+  /* background-color:#24130a; */
+  background: radial-gradient(
+    circle at center,
+    #3e2f28 0%,
+    #231712 40%,
+    #0f0806 100%
+  );
+  gap: 20px;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.519); */
+  border-radius: 10px;
+}
+
+.category-nav-buttons {
+  display: flex;
+  margin: auto; /* This centers the nav(buttons) - div element*/
+  padding-top: 25px;
+  gap: 10px;
+}
+
+.category-nav-buttons .btn-nav {
+  text-decoration: none;
+  background-color: #725345;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.category-nav-buttons .btn-nav:hover {
+  background-color: #5a3e33;
+  transform: translateY(-10px);
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 250px 50px;
+  grid-area: 'row1 row1 row1'
+  'row2 row2 row2'
+  'row3 row3 row3' ; */
+  /* background-color: #503314; */
+
+  align-items: center;
+  margin: 30px 80px;
+  border-radius: 5px;
+  border: 0.5px outset rgba(255, 255, 255, 0.484);
+  box-shadow: 0 0 10px rgba(130, 114, 106, 0.1);
+}
+
+.product-card .row-1 {
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 0.3px rgba(0, 0, 0, 0.1); */
+  background: rgba(20, 14, 10, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(199, 154, 90, 0.6);
+  margin: 30px;
+}
+
+.product-card .row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  gap: 100px;
+}
+
+.product-card .row-2 .inner-class-row-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 20px;
+  box-shadow: 0 0 5px rgba(92, 90, 90, 0.25);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.product-card .row-2 li {
+  margin-left: 50px;
+}
+
+.product-card .row-2 img {
+  width: 400px;
+  border-radius: 5px;
+  height: 500px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.product-card .row-2 .price {
+  box-shadow: 0 0 5px rgba(92, 90, 90, 0.25);
+  border-radius: 5px;
+  display: inline;
+  padding: 15px;
+  width: fit-content;
+}
+
+.product-card .row-3 {
+  margin: 30px 0;
+}
+.product-card .row-3 button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #39261f;
+  color: white;
+  font-weight: bold;
+}
+
+.product-card .row-3 button:hover {
+  background-color: #77594a;
+}
+
+/* Adding hover functionality to the category buttons */
+.inner-list-category-nav-button {
+  display: none;
+}
+
+
+/* Made the list as grid, so to have proper space between name and the price-add-grp container -> 1fr to first gives it proper space */
+.inner-list-category-nav-button li {
+  /* list-style: none; */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 50px;
+  align-items:center;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+/* Its not on button hover, because it breaks as soon as the hover on the button is removed, so we kept the whole div, which will stay till the hover is there on the entire div */
+.category-nav-buttons > div:hover .inner-list-category-nav-button {
+  display: block;
+}
+
+/* Relative position has to be added to the parent container, so that we can position child elements according to its reference */
+.category-nav-buttons > div {
+  position: relative;
+}
+/* By specifying position: relative, we mark this as parent */
+
+
+/* Position absolute,position the element relative to the nearest positioned ancestor */
+/* “If any child is positioned absolutely, use the relatice parent as the coordinate system” */
+.inner-list-category-nav-button {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #472e23;
+  padding: 20px;
+  width: max-content;
+  min-width: 160px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+/* With absolute positioning, the element doesnt pushes other elements, rather it flows above other elements */
+
+
+.inner-list-category-nav-button .add-to-cart-button{
+  padding: 3px;
+  width: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.inner-list-category-nav-button .clk-to-shown-on-card-btn{
+  padding: 3px;
+  /* width: 30px; */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #472e23;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.inner-list-category-nav-button .price-add-grp{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-left: 20px; */
+  /* justify-content: space-between; */
+
+}
+
+.price-add-grp p {
+  min-width: 40px;
+  text-align: left;
+}
+
