@@ -100,10 +100,40 @@ a:visited:first-child {
   font-weight: bold;
 } */
 
-header .third-div button {
+.third-div {
+  display: flex;
+}
+
+header .third-div button,
+span {
   padding: 10px;
   margin-right: 1rem;
   border-radius: 10px;
+}
+.cart-count-btn-grp {
+  position: relative;
+}
+.cart-btn-hover {
+  display: none;
+  background-color: #77594a;
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  padding: 20px;
+  width: max-content;
+  min-width: 90px;
+  border-radius: 10px;
+}
+
+.cart-btn-hover li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.cart-count-btn-grp:hover .cart-btn-hover {
+  display: block;
 }
 
 section {
@@ -270,14 +300,13 @@ section {
   display: none;
 }
 
-
 /* Made the list as grid, so to have proper space between name and the price-add-grp container -> 1fr to first gives it proper space */
 .inner-list-category-nav-button li {
   /* list-style: none; */
   display: grid;
   grid-template-columns: 1fr auto;
   column-gap: 50px;
-  align-items:center;
+  align-items: center;
   white-space: nowrap;
   margin-bottom: 10px;
 }
@@ -292,7 +321,6 @@ section {
   position: relative;
 }
 /* By specifying position: relative, we mark this as parent */
-
 
 /* Position absolute,position the element relative to the nearest positioned ancestor */
 /* “If any child is positioned absolutely, use the relatice parent as the coordinate system” */
@@ -311,17 +339,14 @@ section {
 
 /* With absolute positioning, the element doesnt pushes other elements, rather it flows above other elements */
 
-
-.inner-list-category-nav-button .add-to-cart-button{
+.inner-list-category-nav-button .add-to-cart-button {
   padding: 3px;
   width: 30px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-
-
-.inner-list-category-nav-button .clk-to-shown-on-card-btn{
+.inner-list-category-nav-button .clk-to-shown-on-card-btn {
   padding: 3px;
   /* width: 30px; */
   border-radius: 5px;
@@ -333,17 +358,15 @@ section {
   text-align: left;
 }
 
-.inner-list-category-nav-button .price-add-grp{
-  display:flex;
+.inner-list-category-nav-button .price-add-grp {
+  display: flex;
   align-items: center;
   gap: 10px;
   /* margin-left: 20px; */
   /* justify-content: space-between; */
-
 }
 
 .price-add-grp p {
   min-width: 40px;
   text-align: left;
 }
-
