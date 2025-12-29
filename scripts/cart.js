@@ -1,34 +1,31 @@
-let cart = [];
+const cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
-const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+const tableBody = document.querySelector("#cart-table tbody");
 
-addToCartButtons.forEach((button) =>
-  button.addEventListener("click", () => {
-    const name = button.dataset.name;
-    const price = Number(button.dataset.price);
+const totalPrice = document.getElementById("grand-total");
 
-    const existingItem = cart.find((item) => item.name === name);
-    if (existingItem) {
-      existingItem.quantity += 1;
-    } else {
-      cart.push({ name, price, quantity: 1 });
-    }
-    updateCartUI();
-    console.log(cart);
-  })
-);
+let grandTotal = 0;
 
-const cartCount = document.getElementById("cart-count");
-const cartPrice = document.getElementById("cart-price");
+cartData.forEach((item) => {
+  const row = document.createElement("tr");
 
-function updateCartUI() {
-  let sum = 0;
-  let Tprice = 0;
-  cart.forEach((c) => {
-    sum += c.quantity;
-    Tprice += c.quantity * c.price;
-  });
+  const itemTotal = item.quantity * item.price;
+  grandTotal += itemTotal;
 
-  cartCount.textContent = sum;
-  cartPrice.textContent = Tprice;
-}
+  row.innerHTML = `
+    <td> ${item.name} </td>
+    <td> ${item.price} </td>
+    <td> ${item.quantity} </td>
+    <td> ${itemTotal} </td>
+`;
+
+  tableBody.appendChild(row);
+});
+
+const resetBtn = document.getElementById('cart-reset-btn');
+resetBtn.addEventListener('click' , () =>{
+    localStorage.removeItem('cart');
+    location.reload();
+});
+
+totalPrice.textContent = `Grand Total : ₹${grandTotal}`;

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/brewvia-web-style.css" />
+  </head>
+  <body>
+    <div class="main-parent-container">
+      <header>
+        <div class="first-div">
+          <img src="img/logo.jpg" alt="Brewvia-logo" />
+          <h3>Brewvia</h3>
+        </div>
+
+        <div class="second-div">
+          <a href="">Home</a>
+          <a href="">Categories</a>
+          <a href="">Contact</a>
+          <a href="">About</a>
+        </div>
+
+        <div class="third-div">
+          <div class="cart-count-btn-grp">
+            <button><a href="cart.html">Cart</a></button>
+
+            <ul class="cart-btn-hover">
+              <li>
+                <span>Number of Items:</span>
+                <span class="cart-count">0</span>
+              </li>
+
+              <li><span>Cart Total:</span> <span id="cart-price">0</span></li>
+            </ul>
+          </div>
+          <span class="cart-count">0</span>
+        </div>
+      </header>
+
+      <section>
+        <div class="hero-section-description">
+          <h1>Experience the best in the class Flavour richness</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            consequatur voluptatem libero neque laudantium? Blanditiis A modern
+            minimalist coffee mug with clean ceramic texture, steaming hot
+            coffee, soft realistic steam rising naturally
+          </p>
+        </div>
+        <div>
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="hero-video"
+            id="myVideo"
+          >
+            <source src="Vid/hero-section-vid-2.mp4" type="video/webm" />
+          </video>
+        </div>
+      </section>
+
+      <section class="Our-bestselling-products-section">
+        <div class="head"><h1>The Brews Everyone's Buzzing About.</h1></div>
+        <div class="tagline">
+          <p>
+            Our community has spoken. From the velvety crema of our Espresso to
+            our signature roasts, these are the cups that keep our regulars
+            coming back for 'just one more.' Find your new favorite today.
+          </p>
+        </div>
+
+        <div class="grid-products">
+          <div class="grid-products-items">
+            <h3>Espresso</h3>
+            <img src="img/bestseller-img-coffee1.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Cappuccino</h3>
+            <img src="img/234.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Americano</h3>
+            <img src="img/540.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Ginger Tea</h3>
+            <img src="img/tea-bestseller.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Masala Tea</h3>
+            <img src="img/pexels-withoguz-13245066.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Assam Tea</h3>
+            <img src="img/pexels-nida-kurt-5079840-28458238.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Rose Tea</h3>
+            <img src="img/pexels-zulfugarkarimov-33781569.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="grid-products-items">
+            <h3>Choco Shake</h3>
+            <img src="img/pexels-pushkar-kumar-32881714-34541593.jpg" alt="" />
+            <div>
+              <p>Price : 100</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="Order-now-heading">
+        <h1>Choose Your Brew</h1>
+        <span>A selection made to suit every taste</span>
+      </div>
+
+      <section class="ordering-section">
+        <div class="category-nav-buttons">
+          <div>
+            <button class="btn-nav">COFFEE</button>
+            <ul class="inner-list-category-nav-button">
+              <li>
+                <button class="clk-to-shown-on-card-btn">Espresso</button>
+                <div class="price-add-grp">
+                  <p>₹100</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Espresso"
+                    data-price="100"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">Americano</button>
+                <div class="price-add-grp">
+                  <p>₹105</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Americano"
+                    data-price="105"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">Mocha</button>
+                <div class="price-add-grp">
+                  <p>₹100</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Mocha"
+                    data-price="100"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">Frappe</button>
+                <div class="price-add-grp" data-name="Frappe" data-price="130">
+                  <p>₹130</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Frappe"
+                    data-price="130"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">
+                  Caramel Macchiato
+                </button>
+                <div class="price-add-grp">
+                  <p>₹80</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Caramel Macchiato"
+                    data-price="80"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">Latte</button>
+                <div class="price-add-grp">
+                  <p>₹120</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Latte"
+                    data-price="120"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+              <li>
+                <button class="clk-to-shown-on-card-btn">Cappuccino</button>
+                <div class="price-add-grp">
+                  <p>₹80</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Cappuccino"
+                    data-price="80"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <button class="btn-nav">TEA</button>
+            <ul class="inner-list-category-nav-button">
+              <li>
+                <button class="clk-to-shown-on-card-btn">Ginger Tea</button>
+                <div class="price-add-grp">
+                  <p>₹12</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Ginger Tea"
+                    data-price="12"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+              <li>
+                <button class="clk-to-shown-on-card-btn">Lemon Tea</button>
+                <div class="price-add-grp">
+                  <p>₹15</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Lemon Tea"
+                    data-price="15"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+              <li>
+                <button class="clk-to-shown-on-card-btn">Masala Tea</button>
+                <div class="price-add-grp">
+                  <p>₹10</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Masala Tea"
+                    data-price="10"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">Rose Tea</button>
+                <div class="price-add-grp">
+                  <p>₹20</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Rose Tea"
+                    data-price="20"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+              <li>
+                <button class="clk-to-shown-on-card-btn">
+                  Cinnamon ginger green tea
+                </button>
+                <div class="price-add-grp">
+                  <p>₹30</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Cinnamon ginger green tea"
+                    data-price="30"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">
+                  Special Tusli Tea
+                </button>
+                <div class="price-add-grp">
+                  <p>₹15</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Special Tulsi Tea"
+                    data-price="15"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+
+              <li>
+                <button class="clk-to-shown-on-card-btn">Assam Tea</button>
+                <div class="price-add-grp">
+                  <p>₹20</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Assam Tea"
+                    data-price="20"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <button class="btn-nav">OTHER</button>
+            <ul class="inner-list-category-nav-button">
+              <li>
+                <button class="clk-to-shown-on-card-btn">
+                  Chocolate Shake
+                </button>
+                <div class="price-add-grp">
+                  <p>₹105</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Chocolate Shake"
+                    data-price="105"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+              <li>
+                <button class="clk-to-shown-on-card-btn">
+                  Special Hazelnut Hot Chocolate
+                </button>
+                <div class="price-add-grp">
+                  <p>₹115</p>
+                  <button
+                    class="add-to-cart-button"
+                    data-name="Special Hazelnut Hot Chocolate"
+                    data-price="115"
+                  >
+                    +
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="row-1">
+            <h1>Espresso</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+          </div>
+          <div class="row-2">
+            <div class="product-info">
+              <p class="tagline">🔥 Bold Flavor. Zero Guilt. Pure Energy.</p>
+
+              <p class="section-title">Our Classic Espresso Shot</p>
+
+              <ul class="feature-list">
+                <li>Just 2 Calories per serving</li>
+                <li>Rich, intense aroma brewed to perfection</li>
+                <li>100% premium coffee beans, freshly ground</li>
+                <li>Naturally low in carbs, fat & sugar</li>
+                <li>Quick energy boost, anytime you need it</li>
+              </ul>
+
+              <div class="product-meta">
+                <span>☕ Strength: Strong</span>
+                <span>⚡ Caffeine: High</span>
+                <span>🔥 Served Hot</span>
+              </div>
+
+              <div class="price-cta">
+                <p class="price">₹100</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Espresso"
+                  data-price="100"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-visual">
+              <img src="img/pexels-chevanon-312418.jpg" alt="Espresso" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-btn-section">Order now</section>
+      <section class="Customer-feedback-section"></section>
+    </div>
+
+    <script src="scripts/addTocart.js"></script>
+  </body>
+</html>

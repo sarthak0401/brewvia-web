@@ -1,0 +1,41 @@
+#cart-table,
+th,
+td {
+  padding: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#cart-table {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.total-checkout-grp {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#checkout-btn {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0091ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cart-reset-btn {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dc0303;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
