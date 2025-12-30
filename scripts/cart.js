@@ -13,7 +13,7 @@ cartData.forEach((item) => {
   grandTotal += itemTotal;
 
   row.innerHTML = `
-    <td> ${item.name} </td>
+    <td> ${item.productName} </td>
     <td> ${item.price} </td>
     <td> ${item.quantity} </td>
     <td> ${itemTotal} </td>

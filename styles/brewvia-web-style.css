@@ -607,3 +607,37 @@ span {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(124, 60, 31, 0.4);
 }
+
+
+/* Toast button for displaying "Product added to cart " */
+#toast {
+  visibility: hidden; /* Hidden by default */
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%); /* Center it horizontally */
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+/* Class to show the toast */
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px; /* Slight move up animation */
+}
+
+.toast-highlight {
+  color: #ffd700; /* Gold color (or any color you want) */
+  font-weight: bold;
+  padding-right: 0;
+  margin-right: 5px;
+}

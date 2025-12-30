@@ -1,6 +1,9 @@
 let cart = [];
 
 const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+const toast = document.getElementById("toast");
+
+let toastTimer;
 
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -8,19 +11,29 @@ function saveCart() {
 
 addToCartButtons.forEach((button) =>
   button.addEventListener("click", () => {
-    const name = button.dataset.name;
+    const productName = button.getAttribute("data-name").trim();
     const price = Number(button.dataset.price);
 
-    const existingItem = cart.find((item) => item.name === name);
+    // toast.innerText = `'${productName}'` + " added to cart!";
+    clearTimeout(toastTimer);
+
+    toast.innerHTML = `<span class="toast-highlight"> ${productName}</span>added to cart! `;
+    toast.className = "show";
+
+    const existingItem = cart.find((item) => item.productName === productName);
     if (existingItem) {
       existingItem.quantity += 1;
       saveCart();
     } else {
-      cart.push({ name, price, quantity: 1 });
+      cart.push({ productName, price, quantity: 1 });
       saveCart();
     }
     updateCartUI();
     console.log(cart);
+
+    toastTimer = setTimeout(function () {
+      toast.className = toast.className.replace("show", "");
+    }, 3000);
   })
 );
 
