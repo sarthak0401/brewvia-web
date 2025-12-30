@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/brewvia-web-style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="main-parent-container">
@@ -38,7 +43,7 @@
         </div>
       </header>
 
-      <section>
+      <section class="hero-section">
         <div class="hero-section-description">
           <h1>Experience the best in the class Flavour richness</h1>
           <p>
@@ -63,7 +68,10 @@
       </section>
 
       <section class="Our-bestselling-products-section">
-        <div class="head"><h1>The Brews Everyone's Buzzing About.</h1></div>
+        <div class="head">
+          <h1>The Brews Everyone's Buzzing About.</h1>
+          <!-- <span>[Most Loved]</span> -->
+        </div>
         <div class="tagline">
           <p>
             Our community has spoken. From the velvety crema of our Espresso to
@@ -76,72 +84,123 @@
           <div class="grid-products-items">
             <h3>Espresso</h3>
             <img src="img/bestseller-img-coffee1.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹100</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Espresso"
+                data-price="100"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Cappuccino</h3>
             <img src="img/234.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹80</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Cappuccino"
+                data-price="80"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Americano</h3>
             <img src="img/540.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹105</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Americano"
+                data-price="105"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Ginger Tea</h3>
             <img src="img/tea-bestseller.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹12</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Ginger Tea"
+                data-price="12"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Masala Tea</h3>
             <img src="img/pexels-withoguz-13245066.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹10</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Masala Tea"
+                data-price="10"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Assam Tea</h3>
-            <img src="img/pexels-nida-kurt-5079840-28458238.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <img
+              src="img/pexels-luis-felipe-perez-817377805-19352808.jpg"
+              alt=""
+            />
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹20</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Assam Tea"
+                data-price="20"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Rose Tea</h3>
             <img src="img/pexels-zulfugarkarimov-33781569.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹20</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Rose Tea"
+                data-price="20"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
 
           <div class="grid-products-items">
             <h3>Choco Shake</h3>
             <img src="img/pexels-pushkar-kumar-32881714-34541593.jpg" alt="" />
-            <div>
-              <p>Price : 100</p>
-              <button>Add to Cart</button>
+            <div class="price-add-btn-grp-bestseller-section">
+              <p>Price: <strong>₹105</strong></p>
+              <button
+                class="add-to-cart-button"
+                data-name="Chocolate Shake"
+                data-price="105"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
@@ -149,10 +208,7 @@
 
       <div id="Order-now-heading">
         <h1>Choose Your Brew</h1>
-        <span>A selection made to suit every taste</span>
-      </div>
-
-      <section class="ordering-section">
+        <span>Curated for every craving</span>
         <div class="category-nav-buttons">
           <div>
             <button class="btn-nav">COFFEE</button>
@@ -398,11 +454,13 @@
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="product-card">
+      <section class="ordering-section">
+        <!-- <div class="product-card">
           <div class="row-1">
             <h1>Espresso</h1>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+  
           </div>
           <div class="row-2">
             <div class="product-info">
@@ -440,10 +498,57 @@
               <img src="img/pexels-chevanon-312418.jpg" alt="Espresso" />
             </div>
           </div>
+        </div> -->
+
+        <div class="product-grid">
+          <div class="info-box pos-tl">
+            <h3>☕ Flavor Profile</h3>
+            <p>Bold • Rich • Bitter</p>
+            <p>Dark Chocolate Notes</p>
+          </div>
+
+          <div class="info-box pos-tr">
+            <h3>🌍 Origin & Roast</h3>
+            <p>Ethiopian Highlands</p>
+            <p>Dark French Roast</p>
+          </div>
+
+          <div class="visual-center">
+            <h1 class="product-title">Classic Espresso</h1>
+            <div class="image-wrapper">
+              <img
+                src="img/Screenshot 2025-12-30 125632.png"
+                alt="Coffee Cup"
+                class="main-img"
+              />
+            </div>
+            <div class="action-area">
+              <span class="price-tag">Price: <strong>₹100</strong></span>
+              <button
+                class="add-to-cart-button add-to-cart-btn "
+                data-name="Espresso"
+                data-price="100"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <div class="info-box pos-bl">
+            <h3>🌿 Nutrition</h3>
+            <p>Low Calories</p>
+            <p>No added Sugar</p>
+          </div>
+
+          <div class="info-box pos-br">
+            <h3>⚡Best For</h3>
+            <p>Morning Energy</p>
+            <p>Work Focus</p>
+          </div>
         </div>
       </section>
 
-      <section class="cta-btn-section">Order now</section>
+      <section class="cta-btn-section"></section>
       <section class="Customer-feedback-section"></section>
     </div>
 
