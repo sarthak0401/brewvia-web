@@ -649,7 +649,7 @@ span {
 }
 
 .toast-highlight {
-  color: #ffd700; /* Gold color (or any color you want) */
+  color: #ffd700; 
   font-weight: bold;
   padding-right: 0;
   margin-right: 5px;

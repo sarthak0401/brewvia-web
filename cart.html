@@ -4,11 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/cartPage.css"/>
+    <link rel="stylesheet" href="styles/cartPage.css" />
   </head>
   <body>
-    <h1>Cart Items</h1>
-    <table id="cart-table">
+    <div class="header-shopping-cart">
+      <h1>Shopping Cart</h1>
+    </div>
+
+    <div class="cart-total-section">
+      <div class="cart-items">
+        <div class="grid-cart-row">
+          <div class="produt-info">Item</div>
+          <div class="produt-price">Price</div>
+          <div class="produt-qty">Quantity</div>
+          <div class="produt-subTotal">Sub-Total</div>
+          <div class="produt-removeBtn">x</div>
+        </div>
+      </div>
+
+      <div class="summary-info-grid">
+        <div class="coupon-section">
+          <p>Coupon Code</p>
+          <input type="text" />
+        </div>
+        <hr />
+
+        <p id="order-sum-heading">Order Summary</p>
+        <hr />
+
+        <div class="summary-element">
+          <p>Items</p>
+          <span id="total-items">0</span>
+        </div>
+
+        <div class="summary-element">
+          <p>Sub Total</p>
+          <span id="cart-total">₹0</span>
+        </div>
+
+        <div class="summary-element">
+          <p>Coupon Discount (-5%)</p>
+          <span id="coupons-disc">₹0</span>
+        </div>
+
+        <hr />
+
+        <div class="summary-element">
+          <p>Total</p>
+          <span id="total-amt">₹0</span>
+        </div>
+
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <!-- <table id="cart-table">
       <thead>
         <tr>
           <th>Item</th>
@@ -18,13 +68,13 @@
         </tr>
       </thead>
       <tbody></tbody>
-    </table>
+    </table> -->
 
-    <div class="total-checkout-grp">
+    <!-- <div class="total-checkout-grp">
       <h2 id="grand-total"></h2>
       <button id="checkout-btn">Checkout</button>
       <button id="cart-reset-btn">Reset Cart</button>
-    </div>
+    </div> -->
     <script src="scripts/cart.js"></script>
   </body>
 </html>
