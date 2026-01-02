@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/cartPage.css" />
+
+    <link rel="stylesheet" href="styles/brewvia-web-style.css" />
   </head>
   <body>
+    <header id="header-placeholder"></header>
+
     <div class="header-shopping-cart">
       <h1>Shopping Cart</h1>
     </div>
 
     <div class="cart-total-section">
-      <div class="cart-items">
-        <div class="grid-cart-row">
-          <div class="produt-info">Item</div>
-          <div class="produt-price">Price</div>
-          <div class="produt-qty">Quantity</div>
-          <div class="produt-subTotal">Sub-Total</div>
-          <div class="produt-removeBtn">x</div>
+      <div>
+        <div class="grid-cart-row-head">
+          <div class="produt-info">ITEM</div>
+          <div class="produt-price">PRICE</div>
+          <div class="produt-qty">QUANTITY</div>
+          <div class="produt-subTotal">SUB-TOTAL</div>
+          <div class="produt-removeBtn">REMOVE</div>
         </div>
+
+        <div class="cart-items"></div>
       </div>
 
       <div class="summary-info-grid">
@@ -76,5 +82,6 @@
       <button id="cart-reset-btn">Reset Cart</button>
     </div> -->
     <script src="scripts/cart.js"></script>
+    <script src="scripts/header.js"></script>
   </body>
 </html>

@@ -13,35 +13,7 @@
   </head>
   <body>
     <div class="main-parent-container">
-      <header>
-        <div class="first-div">
-          <img src="img/logo.jpg" alt="Brewvia-logo" />
-          <h3>Brewvia</h3>
-        </div>
-
-        <div class="second-div">
-          <a href="">Home</a>
-          <a href="">Categories</a>
-          <a href="">Contact</a>
-          <a href="">About</a>
-        </div>
-
-        <div class="third-div">
-          <div class="cart-count-btn-grp">
-            <button><a href="cart.html">Cart</a></button>
-
-            <ul class="cart-btn-hover">
-              <li>
-                <span>Number of Items:</span>
-                <span class="cart-count">0</span>
-              </li>
-
-              <li><span>Cart Total:</span> <span id="cart-price">0</span></li>
-            </ul>
-          </div>
-          <!-- <span class="cart-count">0</span> -->
-        </div>
-      </header>
+      <header id="header-placeholder"></header>
 
       <section class="hero-section">
         <div class="hero-section-description">
@@ -194,13 +166,15 @@
             <img src="img/pexels-pushkar-kumar-32881714-34541593.jpg" alt="" />
             <div class="price-add-btn-grp-bestseller-section">
               <p>Price: <strong>₹105</strong></p>
-              <button
-                class="add-to-cart-button"
-                data-name="Chocolate Shake"
-                data-price="105"
-              >
-                Add to Cart
-              </button>
+              <div class="addBtn-div-container">
+                <button
+                  class="add-to-cart-button"
+                  data-name="Chocolate Shake"
+                  data-price="105"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -343,6 +317,7 @@
                   </button>
                 </div>
               </li>
+
               <li>
                 <button class="clk-to-shown-on-card-btn">Masala Tea</button>
                 <div class="price-add-grp">
@@ -524,13 +499,15 @@
             </div>
             <div class="action-area">
               <span class="price-tag">Price: <strong>₹100</strong></span>
-              <button
-                class="add-to-cart-button add-to-cart-btn"
-                data-name="Espresso"
-                data-price="100"
-              >
-                Add to Cart
-              </button>
+              <div class="addBtn-div-container">
+                <button
+                  class="add-to-cart-button add-to-cart-btn"
+                  data-name="Espresso"
+                  data-price="100"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
 
@@ -553,6 +530,8 @@
     </div>
 
     <div id="toast">Product added to cart!</div>
+
     <script src="scripts/addTocart.js"></script>
+    <script src="scripts/header.js"></script>
   </body>
 </html>
