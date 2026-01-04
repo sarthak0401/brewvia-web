@@ -31,7 +31,7 @@ And in the later part, i'll create a mobile application using react-native for t
 ## Author
 Sarthak Bokade
 
-https://github.com/user-attachments/assets/5d126e30-ac5b-4842-b70f-ad0bd66b62d7
+https://github.com/user-attachments/assets/a8a99cbf-c7cb-412e-b029-ec2fb3e0bebf
 
 
 
