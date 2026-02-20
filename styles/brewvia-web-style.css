@@ -149,8 +149,9 @@ span {
 }
 
 .cart-count-btn-grp a:link,
-a:visited {
+.cart-count-btn-grp a:visited {
   text-decoration: none;
+  color: white;
 }
 
 .cart-btn-hover {
