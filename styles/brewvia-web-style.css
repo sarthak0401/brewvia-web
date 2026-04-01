@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -195,6 +201,17 @@ span {
   object-fit: cover;
   border-radius: 20px;
   /* margin: 10px; */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-video {
+    width: 100%;
+  }
 }
 
 .hero-section-description {
@@ -469,7 +486,7 @@ span {
   border-radius: 10px;
   /* height: 60vh; */
   display: grid;
-  grid-template-columns: 39.1% 1fr;
+  grid-template-columns: 40% 1fr;
   grid-template-areas:
     "head grid-product"
     "tagline grid-product";
@@ -479,6 +496,20 @@ span {
   padding: 3rem 3rem;
   width: 78%;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .Our-bestselling-products-section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "tagline"
+      "grid-product";
+
+    width: 95%;
+    padding: 1.5rem;
+    gap: 20px;
+  }
 }
 
 .Our-bestselling-products-section .head {
@@ -506,7 +537,7 @@ span {
 
 .Our-bestselling-products-section .grid-products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 30px;
   justify-content: center;
   justify-items: center;
@@ -517,10 +548,10 @@ span {
 .Our-bestselling-products-section .grid-products img {
   border-radius: 10px;
   width: 100%;
-  min-height: 195px;
+  min-height: 300px;
 }
 .Our-bestselling-products-section .grid-products .grid-products-items {
-  max-width: 130px;
+  /* max-width: 150px; */
   min-height: 250px;
   background-color: #51342151;
   border-radius: 10px;
@@ -531,8 +562,25 @@ span {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: space-between;
 
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .Our-bestselling-products-section .grid-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .Our-bestselling-products-section .grid-products {
+    grid-template-columns: 1fr;
+  }
+
+  .Our-bestselling-products-section .grid-products .grid-products-items {
+    width: 60%;
+  }
 }
 
 .price-add-btn-grp-bestseller-section {
@@ -759,10 +807,22 @@ span {
   font-size: 50px;
 }
 .our-speciality-section .main-div {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 2rem;
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .our-speciality-section .main-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .our-speciality-section .main-div {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main-div .features {
