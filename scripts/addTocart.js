@@ -1,5 +1,9 @@
 let cart = [];
 
+if (window.location.hash) {
+  window.location.hash = "";
+  window.scrollTo(0, 0);
+}
 const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
 const toast = document.getElementById("toast");
 
@@ -43,7 +47,7 @@ addToCartButtons.forEach((button) =>
       console.log("Hiding toast");
       toast.classList.remove("show");
     }, 3000);
-  })
+  }),
 );
 
 function btnChange(existingItem, clickedButton) {
